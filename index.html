@@ -13,7 +13,25 @@
     <!-- HEADER  -->
     <header>
         <div class="container">
-            <img class="header-img" src="./images/header-mob.jpg" alt="our product" width="300" />
+            <picture>
+                <!-- desktop  -->
+                <source media="(min-width: 1200px)" srcset="
+              ./images/header-1170-opt.jpg 1x,
+              ./images/header-2340-opt.jpg 2x
+            " type="image/jpg" />
+                <!-- tablet -->
+                <source media="(min-width: 768px)" srcset="
+              ./images/header-738-opt.jpg  1x,
+              ./images/header-1476-opt.jpg 2x
+            " type="image/jpg" />
+                <!-- mobile -->
+                <source media="(min-width: 480px)" srcset="
+              ./images/header-450-opt.jpg 1x,
+              ./images/header-900-opt.jpg 2x
+            " type="image/jpg" />
+                <img class="header-img" src="./images/header-450-opt.jpg" alt="our product" />
+            </picture>
+
             <h1 class="header-title">iGaming Product</h1>
             <button id="learn-more-btn">Дізнатися більше</button>
         </div>
@@ -21,7 +39,26 @@
     <!-- ABOUT -->
     <section id="about-product">
         <div class="container">
-            <img class="about-img" src="./images/about-mob.jpg" alt="Product Image" width="300" />
+            <h2 class="visually-hidden">About</h2>
+            <picture>
+                <!-- desktop  -->
+                <source media="(min-width: 1200px)" srcset="
+              ./images/about-1170-opt.jpg 1x,
+              ./images/about-2340-opt.jpg 2x
+            " type="image/jpg" />
+                <!-- tablet -->
+                <source media="(min-width: 768px)" srcset="
+              ./images/about-738-opt.jpg  1x,
+              ./images/about-1476-opt.jpg 2x
+            " type="image/jpg" />
+                <!-- mobile -->
+                <source media="(min-width: 480px)" srcset="
+              ./images/about-450-opt.jpg 1x,
+              ./images/about-900-opt.jpg 2x
+            " type="image/jpg" />
+
+                <img class="about-img" src="./images/about-450-opt.jpg" alt="Product Image" />
+            </picture>
             <p class="about-description">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
                 nostrum consequuntur commodi cupiditate veniam perferendis corporis
@@ -34,7 +71,24 @@
     <section id="product-features">
         <div class="container">
             <div class="feature">
-                <img class="feature-img" src="./images/feature-first.png" alt="Feature 1" width="300" />
+                <picture>
+                    <!-- desktop  -->
+                    <source media="(min-width: 1200px)" srcset="
+                ./images/feature-first-358-opt.png 1x,
+                ./images/feature-first-716-opt.png 2x
+              " type="image/png" />
+                    <!-- tablet -->
+                    <source media="(min-width: 768px)" srcset="
+                ./images/feature-first-706-opt.png  1x,
+                ./images/feature-first-1412-opt.png 2x
+              " type="image/png" />
+                    <!-- mobile -->
+                    <source media="(min-width: 480px)" srcset="
+                ./images-feature-first-418-opt.png 1x,
+                ./images/feature-first-836-opt.png 2x
+              " type="image/jpg" />
+                    <img class="feature-img" src="./images/feature-first-418-opt.png" alt="Feature 1" />
+                </picture>
                 <h2 class="feature-title">Фіча 1</h2>
                 <p class="feature-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -42,7 +96,25 @@
                 </p>
             </div>
             <div class="feature">
-                <img class="feature-img" src="./images/feature-second.png" alt="Feature 2" width="300" />
+                <picture>
+                    <!-- desktop  -->
+                    <source media="(min-width: 1200px)" srcset="
+                ./images/feature-second-358-opt.png 1x,
+                ./images/feature-second-716-opt.png 2x
+              " type="image/png" />
+                    <!-- tablet -->
+                    <source media="(min-width: 768px)" srcset="
+                ./images/feature-second-706-opt.png  1x,
+                ./images/feature-second-1412-opt.png 2x
+              " type="image/png" />
+                    <!-- mobile -->
+                    <source media="(min-width: 480px)" srcset="
+                ./images-feature-second-418-opt.png 1x,
+                ./images/feature-second-836-opt.png 2x
+              " type="image/jpg" />
+                    <img class="feature-img" src="./images/feature-second-418-opt.png" alt="Feature 2" />
+                </picture>
+
                 <h2 class="feature-title">Фіча 2</h2>
                 <p class="feature-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -50,7 +122,25 @@
                 </p>
             </div>
             <div class="feature">
-                <img class="feature-img" src="./images/feature-third.png" alt="Feature 3" width="300" />
+                <picture>
+                    <!-- desktop  -->
+                    <source media="(min-width: 1200px)" srcset="
+                            ./images/feature-third-358-opt.png 1x,
+                            ./images/feature-third-716-opt.png 2x
+                          " type="image/png" />
+                    <!-- tablet -->
+                    <source media="(min-width: 768px)" srcset="
+                            ./images/feature-third-706-opt.png  1x,
+                            ./images/feature-third-1412-opt.png 2x
+                          " type="image/png" />
+                    <!-- mobile -->
+                    <source media="(min-width: 480px)" srcset="
+                            ./images-feature-third-418-opt.png 1x,
+                            ./images/feature-third-836-opt.png 2x
+                          " type="image/jpg" />
+                    <img class="feature-img" src="./images/feature-third-418-opt.png" alt="Feature 3" />
+                </picture>
+
                 <h2 class="feature-title">Фіча 3</h2>
                 <p class="feature-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
@@ -70,6 +160,8 @@
             </div>
         </div>
     </footer>
+    <script src="scripts/main.js"></script>
+
 </body>
 
 </html>
